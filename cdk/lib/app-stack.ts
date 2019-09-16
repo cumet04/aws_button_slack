@@ -1,5 +1,6 @@
 import cdk = require("@aws-cdk/core");
 import * as lambda from "@aws-cdk/aws-lambda";
+import * as iot1click from "@aws-cdk/aws-iot1click";
 import { Duration } from "@aws-cdk/core";
 
 export class AppStack extends cdk.Stack {
@@ -15,6 +16,18 @@ export class AppStack extends cdk.Stack {
       timeout: Duration.seconds(3),
       environment: {
         SLACK_HOOK_URL: process.env.SLACK_HOOK_URL || ""
+      }
+    });
+
+    const iot_placement = new iot1click.CfnPlacement(this, "button_placement", {
+      projectName: "button"
+    });
+
+    const iot_project = new iot1click.CfnProject(this, "iot_project", {
+      placementTemplate: {
+        deviceTemplates: {
+          deviceType: iot1click.CfnProject.
+        }
       }
     });
   }

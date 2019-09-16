@@ -57,6 +57,13 @@
     "@aws-cdk/core" "^1.8.0"
     "@aws-cdk/region-info" "^1.8.0"
 
+"@aws-cdk/aws-iot1click@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iot1click/-/aws-iot1click-1.8.0.tgz#5abefbcd3028511c8e145b68ec1883fb71e9c0bd"
+  integrity sha512-z1bRY++cOzanNzgz/L8xHYOdyL4RI1Ln8iog9d4oYEKEL6/G8L4UgRqM7H7N2+M0oI/wKqqvvYDWnckbLa8eUQ==
+  dependencies:
+    "@aws-cdk/core" "^1.8.0"
+
 "@aws-cdk/aws-kms@^1.8.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-kms/-/aws-kms-1.8.0.tgz#d3359cfab8875cbd293f0e8e4752659dd2d6354b"
